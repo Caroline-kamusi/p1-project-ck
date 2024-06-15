@@ -8,6 +8,7 @@ As part of our strategic initiative to diversify our company's portfolio, we are
 My primary objective is to identify the aircraft models that present the lowest risk in terms of safety and operational reliability. This involves a comprehensive analysis of historical aviation accident data to evaluate the safety performance of various aircraft manufacturers and models. The goal is to provide actionable insights that will guide the decision-making process for the acquisition of aircraft, ensuring that we select models with proven safety records.
 
 ## Data Understanding
+[Aviation Accident Database & Synopses, up to 2023](https://www.kaggle.com/datasets/khsamaha/aviation-accident-database-synopses/code)
 To achieve this objective, I have utilized the National Transportation Safety Board (NTSB) dataset, which includes detailed information on civil aviation accidents from 1962 to 2023. The analysis focuses on key metrics such as fatality rates, injury rates, and the number of uninjured passengers and crew in accidents. These metrics are crucial for assessing the overall safety performance of different aircraft models.
 
 The decision on which aircraft to purchase will be based on the following criteria derived from our analysis:
@@ -40,6 +41,8 @@ By reducing our data in this way, I can focus more closely on the factors that a
 ## Data Subsetting by Aircraft Manufacturer
 In this analysis, I am particularly interested in the most common passenger plane manufacturers. To focus our analysis, I have created a subset of our data, top_10_makes, which includes only the aircrafts made by the top 10 manufacturers according to Investopedia and AeroTime Hub.
 
+<img src="images/make.png" alt="aircraft make" width="650" height="450">
+
 I've standardized the names of these manufacturers in the dataset to ensure consistency. The top 10 manufacturers I've included are:
 
 Boeing
@@ -57,11 +60,16 @@ I've excluded military aircraft manufacturers like Lockheed Martin and Northrop 
 ## Limitations
 Missing Values - Significant portions of the data are missing in many columns. Missing data can lead to biased or incomplete analysis. For instance, missing information about the location or aircraft category might not reveal important patterns related to accident frequency or severity.
 Incomplete Data on Injuries - The columns Total.Fatal.Injuries, Total.Serious.Injuries, Total.Minor.Injuries, and Total.Uninjured have many missing values. Without complete injury data, it's challenging to accurately assess the safety of different aircraft models. The risk assessment might be skewed if severe accidents are underreported or missing.
+
+<img src="images/injuries.png" alt="aircraft make" width="650" height="450">
+
 Lack of Contextual Information - The dataset doesn't include detailed information on operational factors such as maintenance records, pilot experience, or specific environmental conditions at the time of the accident. These factors are crucial in understanding the full context of accidents and making informed recommendations. Without this data, this analysis may have overlooked critical contributors to aviation safety.
 Historical Nature of Data - The dataset spans from 1962 to 2023. Aviation technology, regulations, and practices have evolved significantly over this long period. Old data might not be as relevant to current aircraft models and technologies. Trends observed in old data might not accurately reflect current safety standards.
 
 ## Aircraft Selection for Private and Commercial Divisions
 I've narrowed down our choices to Bombardier for our private division and Embraer for the commercial division. This decision was based on their low fatality rate and high uninjured rate.
+
+<img src="images/fatality_make.png" alt="aircraft make" width="650" height="450">
 
 ## Model Analysis
 Upon analyzing the models, we first narrowed down to aircraft models that had a 100% uninjured rate. I then determined the most popular aircraft model by counting how many entries each of the models had in the data. The CL-600 had the highest count. Although this dataset does not have a record of all flights, I'm assuming the CL-600 has the highest number of occurrences due to its popularity. This assumption is supported by the fact that the Bombardier aircrafts are proven to be safe, and all accidents with this model have a 100% uninjured rate.
