@@ -78,10 +78,11 @@ Upon analyzing the models, we first narrowed down to aircraft models that had a 
 I also did an analysis by engine number. However, since all major manufacturers have moved away from 4 and 3 engine models to 2 engine models, I figured this shouldn't be an issue anyway.
 
 ## Recommendations
+
 Based on this analysis, I am recommending the Airbus 320 for our commercial division and Bombardier CL-600 for our private division.
 
 It's worth noting that although Boeing has a slightly lower fatality rate of 0.0559 compared to Bombardier's slightly higher 0.0588 rate, I've chosen not to recommend Boeing due to the recent revelations that they've been lax on quality control, and the recent Alaska Airlines door blowout.
 
 By making these informed decisions, we aim to ensure the safety of our passengers and crew as we expand into the aviation industry.
 
-For a thorough analysis of this dataset, check out this notebook.
+For a thorough analysis of this dataset, check out this [Tableau Dashboard](https://public.tableau.com/app/profile/caroline.kamusi/viz/AviationAccidents_17185334724950/AviationAccidentDashboard?publish=yes)
